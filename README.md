@@ -1,28 +1,37 @@
 # GraphMining_Amalzen
-An academic graph mining project analyzing collaboration patterns among researchers using arXiv data. Includes preprocessing scripts, graph construction, centrality and community detection, and visualizations.
+
+An academic graph mining project analyzing collaboration patterns among researchers using **arXiv data**. This notebook integrates preprocessing, graph construction, centrality analysis, community detection, and network visualizations.
+
+**GitHub Repository:** [GraphMining_Amalzen](https://github.com/Eyyyron/GraphMining_Amalzen)
+
+---
 
 ## Resources
 
-- Kaggle dataset
+### Kaggle Dataset
+**Source:** [arXiv Metadata — Cornell University](https://www.kaggle.com/datasets/Cornell-University/arxiv/data)  
+Contains the official arXiv metadata used for this project.  
 
-	- https://www.kaggle.com/datasets/Cornell-University/arxiv/data
+**Included files:**
+- **OAI snapshot** — full raw metadata dump (large-scale version)
+- **Derived subsets** used for experimentation and analysis
 
-    The Kaggle dataset link contains the arXiv metadata used in this project:
+**Note:** The OAI snapshot file from Kaggle was converted into a CSV format using a Python script included in the GitHub repository. The script processes the JSON metadata file, extracts relevant fields, and writes them into a structured CSV file. This conversion ensures compatibility with the tools and workflows used in this project.
 
-    a. arXiv metadata OAI snapshot — original metadata dump (large)
+---
 
-- Google Drive — consolidated datasets
+### Google Drive — Consolidated Datasets
+**Folder:** [Drive Link](https://drive.google.com/drive/folders/1CIJmyuIlEqcsBHCT4kxDlWHS6oXzZSrf?usp=sharing)  
 
-	- https://drive.google.com/drive/folders/1CIJmyuIlEqcsBHCT4kxDlWHS6oXzZSrf?usp=sharing
+Contains preprocessed and reduced datasets used throughout this project:
 
-	The Google Drive folder contains the consolidated datasets used in this project, including:
+| Dataset Type | Description | Filename |
+|---------------|-------------|-----------|
+| Full raw dataset | Complete unprocessed arXiv metadata | `raw_dataset(full).csv` |
+| Sample raw dataset | Small subset for testing and debugging | `raw_dataset(sample).csv` |
+| Cleaned dataset | Preprocessed and cleaned version | `cleaned_dataset.csv` |
+| Trimmed dataset | Reduced-size dataset for fast experiments | `trimmed_dataset.csv` |
 
-	a. full raw dataset — full, unprocessed arXiv data
+> **Note:** Local copies of the sample, cleaned, and trimmed datasets are included in this repository for convenience.
 
-	b. sample raw dataset — a small sample of the raw data (included in this repo as `raw_dataset(sample).csv`)
-
-	c. cleaned dataset — preprocessed and cleaned CSV (included in this repo as `cleaned_dataset.csv`)
-
-	d. trimmed dataset — reduced/trimmed CSV for faster experiments (included here as `trimmed_dataset.csv`)
-
-	Note: local copies of the sample, cleaned, and trimmed datasets are included in the repository for convenience. See the repository root for `raw_dataset(sample).csv`, `cleaned_dataset.csv`, and `trimmed_dataset.csv`.
+---
